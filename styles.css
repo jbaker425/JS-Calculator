@@ -11,14 +11,14 @@ html {
 
 h1{
     text-align: center;
+    font-size: 36px;
 }
 
 button {
     height: 60px;
-    background-color: #fff;
-    border-radius: 3px;
+    background-color: rgb(119, 136, 153);
+    border-radius: 10px;
     border: 1px solid #c4c4c4;
-    background-color: transparent;
     border-style: ridge;
     font-size: 2rem;
     color: #333;
@@ -28,38 +28,67 @@ button {
 }
 
 button:hover {
-    background-color: #eaeaea;
+    background-color: #cacaff;
 }
 
-
-.calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-  }
+    width: 560px;
+    height: 423px;
+    display: flex;
+}
 
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 73%;
+    float: center;
+    
+}
+
+.desc {
+    font-size: 16px;
+    margin-left: 10px;
+    width: 27%;
+    float: center;
+    padding-top: 70%;
+    
+}
+
+#dis {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    border: 2px solid #ccc;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgb(241, 235, 235);
+}
 
 #eq {
     background-color: rgb(72, 163, 177);
 }
 
 #eq:hover {
-    background-color: rgb(179, 179, 241);
-}
-
-.num, #pt {
-    background-color: lightslategray;
-    border-radius: 5px;
+    background-color: rgb(130, 203, 255);
 }
 
 .op {
     background-color: #a81e1e;
     color: white;
-    border-radius: 5px;
 }
 
 .op:hover {
@@ -83,23 +112,4 @@ button:hover {
 #div {
     grid-row-start: 4;
     grid-column-start: 4;
-}
-
-#dis {
-    width: 100%;
-    font-size: 5rem;
-    height: 80px;
-    border: none;
-    background-color: #252525;
-    color: #fff;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
-}
-
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
 }
